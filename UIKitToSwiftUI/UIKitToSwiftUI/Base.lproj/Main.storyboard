@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIKitToSwiftUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ceci est une vue UIKit qui contient une vue SwiftUI" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJM-pC-CrQ">
+                                <rect key="frame" x="16" y="59" width="361" height="52.666666666666657"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52.670000000000002" id="B5A-e9-0Ug"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemCyanColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BJM-pC-CrQ" secondAttribute="trailing" constant="16" id="3hB-2Y-YQ4"/>
+                            <constraint firstItem="BJM-pC-CrQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="j87-GB-5aV"/>
+                            <constraint firstItem="BJM-pC-CrQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="qR3-P0-8Cq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="BJM-pC-CrQ" id="Xht-uR-QlT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-31.297709923664122" y="4.9295774647887329"/>
+        </scene>
+        <!--Final View Controller-->
+        <scene sceneID="SL5-tB-Tbm">
+            <objects>
+                <viewController storyboardIdentifier="FinalViewController" id="vWd-Gh-wud" customClass="FinalViewController" customModule="UIKitToSwiftUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8uo-B4-gBt">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.up.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="T1S-PB-aUe">
+                                <rect key="frame" x="118.66666666666669" y="58" width="156" height="176"/>
+                                <color key="tintColor" red="0.72971719499999999" green="0.304469198" blue="0.18425312639999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="156" id="HBF-Dv-WIP"/>
+                                    <constraint firstAttribute="height" constant="175.33000000000001" id="ZQs-FW-91Y"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NaL-vJ-Zjf"/>
+                        <color key="backgroundColor" red="0.94328004119999997" green="0.74419541389999999" blue="0.5041835777" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="T1S-PB-aUe" firstAttribute="centerX" secondItem="8uo-B4-gBt" secondAttribute="centerX" id="7kc-Tz-ZV7"/>
+                            <constraint firstItem="T1S-PB-aUe" firstAttribute="top" secondItem="NaL-vJ-Zjf" secondAttribute="top" id="UyO-FT-EOi"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C95-7l-7uO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1110.6870229007634" y="1.4084507042253522"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="square.and.arrow.up.fill" catalog="system" width="115" height="128"/>
+        <systemColor name="systemCyanColor">
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
